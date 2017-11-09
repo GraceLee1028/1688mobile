@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 18px; }
 
@@ -75,10 +74,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   text-overflow: ellipsis; }
 
 input[type=button], input[type=submit], button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+input[type=button]:focus, input[type=submit]:focus, button:focus {
+  outline: none; }
 
 table {
   border-spacing: 0;
@@ -170,20 +173,6 @@ h5, .h5 {
   font-size: .8rem;
   margin: .5rem 0; }
 
-.single-overflow {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.text-center {
-  text-align: center; }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: left; }
-
 .fl, .fr {
   *display: inline; }
 
@@ -212,7 +201,21 @@ h5, .h5 {
 .hide {
   display: none !important; }
 
-/*鏂囨湰鏍峰紡*/
+/*text style*/
+.single-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: left; }
+
 .text-gray {
   color: #666; }
 

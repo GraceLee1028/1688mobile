@@ -37,7 +37,11 @@ input,textarea,select{
   @include placeholder-color;
 }
 input[type=button],input[type=submit],button{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   @include user-select(none);
+}
+input[type=button]:focus,input[type=submit]:focus,button:focus{
+  outline: none;
 }
 table {
   border-spacing: 0;

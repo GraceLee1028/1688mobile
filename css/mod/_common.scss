@@ -53,20 +53,6 @@ h5, .h5 {
   font-size: .8rem;
   margin:.5rem 0;
 }
-.single-overflow{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.text-center{
-  text-align: center;
-}
-.text-left{
-  text-align: left;
-}
-.text-right{
-  text-align: left;
-}
 .fl,.fr{*display: inline;}
 .fl{
   float: left;
@@ -86,28 +72,37 @@ h5, .h5 {
 .hide{
   display:none !important;
 }
-/*文本样式*/
+/*text style*/
+.single-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: left;
+}
 .text-gray {
   color: #666;
 }
-
 .mark-primary {
   background-color: #fff;
 }
-
 .text-bold {
   font-size: 14px;
   font-weight: 600 !important;
 }
-
 .text-danger {
   color: #f00 !important;
 }
-
 .text-success {
   color: #009966 !important;
 }
-
 .text-nowrap {
   white-space: nowrap !important;
 }
